@@ -22,9 +22,30 @@
 //Ejercicio 3
 
 //Pedir el largo y ancho del potrero
-let largoPotrero = Number(prompt("Ingrese el largo del potrero"));
-let anchoPotrero = Number(prompt("Ingrese el ancho del potrero"));
+// let largoPotrero = Number(prompt("Ingrese el largo del potrero"));
+// let anchoPotrero = Number(prompt("Ingrese el ancho del potrero"));
 
-//Calcular perimetro
-let totalPerimetro = 2 * (largoPotrero + anchoPotrero);
-console.log("El perimetro del potrero es:" + t);
+// //Calcular perimetro
+// let totalPerimetro = 2 * (largoPotrero + anchoPotrero);
+// console.log("El perimetro del potrero es:" + totalPerimetro);
+
+//Ejercicio 4
+
+// pido la temperatura en F°
+// let temFahrenheit = Number(prompt("Ingrese la temperatura en grados Fahrenheit (°F):"));
+
+// //Convierto la temperatura a grados Celsius
+// let tempCelsius = (temFahrenheit - 32) * 5 / 9;
+// console.log("La temperatura en grados Celsius es:" + tempCelsius + "°C");
+
+// EJERCICIO 5
+
+//Pido el añode nacimiento
+let añoNacimiento = Number(prompt("Diga su año denacimiento"));
+let añoActual = 2024
+
+//Calculo la edad
+let edad = (añoActual - añoNacimiento);
+
+console.log("Tienes " + edad + "años");
+
