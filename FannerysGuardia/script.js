@@ -134,24 +134,35 @@
 // console.log("El monto del IVA (19%) es: $" + montoIVA.toFixed(2));
 // console.log("El precio total (con IVA) es: $" + precioTotal.toFixed(2));
 
-//Ejercicio 13
-// Pedir el capital inicial.
-let capitalInicial = Number(prompt("Ingrese el capital inicial de la inversión:"));
+// //Ejercicio 13
+// // Pedir el capital inicial.
+// let capitalInicial = Number(prompt("Ingrese el capital inicial de la inversión:"));
 
-//Pedir la tasa de interés anual (ej. 5 para 5%).
-let tasaInteres = Number(prompt("Ingrese la tasa de interés anual (ej. 5 para 5%):"));
+// //Pedir la tasa de interés anual (ej. 5 para 5%).
+// let tasaInteres = Number(prompt("Ingrese la tasa de interés anual (ej. 5 para 5%):"));
 
-//Pedir el número de años.
-let numeroAnos = Number(prompt("Ingrese el número de años:"));
+// //Pedir el número de años.
+// let numeroAnos = Number(prompt("Ingrese el número de años:"));
 
-// Calcular el interés simple.
-// La fórmula es: Capital * (Tasa/100) * Años.
-// se divide la tasa por 100 para convertir el porcentaje a un número decimal (ej. 5% -> 0.05).
-let interesSimple = capitalInicial * (tasaInteres / 100) * numeroAnos;
+// // Calcular el interés simple.
+// // La fórmula es: Capital * (Tasa/100) * Años.
+// // se divide la tasa por 100 para convertir el porcentaje a un número decimal (ej. 5% -> 0.05).
+// let interesSimple = capitalInicial * (tasaInteres / 100) * numeroAnos;
 
-// Paso 5: Calcular el capital final (Capital Inicial + Interés Ganado).
-let capitalFinal = capitalInicial + interesSimple;
+// //Calcular el capital final (Capital Inicial + Interés Ganado).
+// let capitalFinal = capitalInicial + interesSimple;
 
-// Mostrar el resultado final.
-console.log("El interés ganado es: $" + interesSimple.toFixed(2));
-console.log("El capital final será: $" + capitalFinal.toFixed(2));
+// // Mostrar el resultado final.
+// console.log("El interés ganado es: $" + interesSimple.toFixed(2));
+// console.log("El capital final será: $" + capitalFinal.toFixed(2));
+
+// Ejercicio 14
+//Pido la base del triangulo
+let baseTriangulo = Number(prompt("Ingrese la base deltriangulo:"));
+//Pido laalturadel triangulo
+let alturaTriangulo = Number(prompt("Ingrese la altura del triangulo:"));
+//Calculo el area
+let areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
+//Imprimo el area
+console.log("El area del triangulo es: " + areaTriangulo.toFixed(2));
+
