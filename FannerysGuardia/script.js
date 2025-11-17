@@ -229,15 +229,28 @@
 // //Mostrar el resultado.
 // console.log("La suma de los dígitos es: " + sumaDigitos);
 
-//Ejercicio 19
-//Pedir el número de asistentes.
-let numeroAsistentes = Number(prompt("Ingrese el número de asistentes al evento:"));
+// //Ejercicio 19
+// //Pedir el número de asistentes.
+// let numeroAsistentes = Number(prompt("Ingrese el número de asistentes al evento:"));
 
-//Definir el consumo fijo por persona.
-let refrescosPorPersona = 3;
+// //Definir el consumo fijo por persona.
+// let refrescosPorPersona = 3;
 
-//Calcular el total de refrescos (multiplicación simple).
-let totalRefrescos = numeroAsistentes * refrescosPorPersona;
+// //Calcular el total de refrescos (multiplicación simple).
+// let totalRefrescos = numeroAsistentes * refrescosPorPersona;
 
-//Mostrar el resultado.
-console.log("Se necesitan un total de " + totalRefrescos + " refrescos.");
+// //Mostrar el resultado.
+// console.log("Se necesitan un total de " + totalRefrescos + " refrescos.");
+
+//Ejercicio 20
+// Pedir la distancia recorrida en kilómetros.
+let distanciaKm = Number(prompt("Ingrese la distancia recorrida (en km):"));
+
+// Pedir el tiempo que tomó en horas.
+let tiempoHoras = Number(prompt("Ingrese el tiempo que le tomó (en horas):"));
+
+//Calcular la velocidad promedio.
+let velocidadPromedio = distanciaKm / tiempoHoras;
+
+//Mostrar el resultado en km/h.
+console.log("La velocidad promedio del auto fue de " + velocidadPromedio.toFixed(2) + " km/h.");
