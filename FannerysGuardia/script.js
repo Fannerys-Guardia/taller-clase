@@ -117,19 +117,41 @@
 // //Mostrar el resultado, usando toFixed(2) para que se vea como dinero.
 // console.log("El precio final a pagar es: $" + precioFinal.toFixed(2));
 
-//Ejercicio 12
-// Pedir el precio base (sin IVA)
-let precioBase = Number(prompt("Ingrese el precio base del producto (sin IVA):"));
+// //Ejercicio 12
+// // Pedir el precio base (sin IVA)
+// let precioBase = Number(prompt("Ingrese el precio base del producto (sin IVA):"));
 
-//Definir el IVA como un decimal. 19% se escribe como 0.19.
-let tasaIVA = 0.19;
+// //Definir el IVA como un decimal. 19% se escribe como 0.19.
+// let tasaIVA = 0.19;
 
-//Calcular el monto del IVA (Precio Base * Tasa IVA).
-let montoIVA = precioBase * tasaIVA;
+// //Calcular el monto del IVA (Precio Base * Tasa IVA).
+// let montoIVA = precioBase * tasaIVA;
 
-//Calcular el precio total (Precio Base + Monto IVA).
-let precioTotal = precioBase + montoIVA;
+// //Calcular el precio total (Precio Base + Monto IVA).
+// let precioTotal = precioBase + montoIVA;
 
-// Mostrar ambos resultados.
-console.log("El monto del IVA (19%) es: $" + montoIVA.toFixed(2));
-console.log("El precio total (con IVA) es: $" + precioTotal.toFixed(2));
+// // Mostrar ambos resultados.
+// console.log("El monto del IVA (19%) es: $" + montoIVA.toFixed(2));
+// console.log("El precio total (con IVA) es: $" + precioTotal.toFixed(2));
+
+//Ejercicio 13
+// Pedir el capital inicial.
+let capitalInicial = Number(prompt("Ingrese el capital inicial de la inversión:"));
+
+//Pedir la tasa de interés anual (ej. 5 para 5%).
+let tasaInteres = Number(prompt("Ingrese la tasa de interés anual (ej. 5 para 5%):"));
+
+//Pedir el número de años.
+let numeroAnos = Number(prompt("Ingrese el número de años:"));
+
+// Calcular el interés simple.
+// La fórmula es: Capital * (Tasa/100) * Años.
+// se divide la tasa por 100 para convertir el porcentaje a un número decimal (ej. 5% -> 0.05).
+let interesSimple = capitalInicial * (tasaInteres / 100) * numeroAnos;
+
+// Paso 5: Calcular el capital final (Capital Inicial + Interés Ganado).
+let capitalFinal = capitalInicial + interesSimple;
+
+// Mostrar el resultado final.
+console.log("El interés ganado es: $" + interesSimple.toFixed(2));
+console.log("El capital final será: $" + capitalFinal.toFixed(2));
