@@ -87,15 +87,32 @@
 // let distanciaKm = distanciaMillas * factorKm;
 // console.log(distanciaMillas + " millas equivalen a " + distanciaKm.toFixed(2) + " kilometros.");
 
-// Ejercicio 10
-// Pedir el total de minutos.
-let totalMinutos = Number(prompt("Ingrese un total de minutos:"));
+// // Ejercicio 10
+// // Pedir el total de minutos.
+// let totalMinutos = Number(prompt("Ingrese un total de minutos:"));
 
-// Calcular las horas enteras. Dividimos por 60 (minutos en una hora) y quitamos los decimales con Math.floor.
-let horas = Math.floor(totalMinutos / 60);
+// // Calcular las horas enteras. Dividimos por 60 (minutos en una hora) y quitamos los decimales con Math.floor.
+// let horas = Math.floor(totalMinutos / 60);
 
-// Calcular los minutos restantes. Usamos el operador % para saber lo que "sobró" de la división.
-let minutosRestantes = totalMinutos % 60;
+// // Calcular los minutos restantes. Usamos el operador % para saber lo que "sobró" de la división.
+// let minutosRestantes = totalMinutos % 60;
 
-// Mostrar el resultado.
-console.log(totalMinutos + " minutos son: " + horas + " horas y " + minutosRestantes + " minutos.");
+// // Mostrar el resultado.
+// console.log(totalMinutos + " minutos son: " + horas + " horas y " + minutosRestantes + " minutos.");
+
+//Ejercicio 10
+// Pedir el precio original.
+let precioOriginal = Number(prompt("Ingrese el precio original del producto:"));
+
+//Pedir el porcentaje de descuento (ej. 20).
+let porcentajeDescuento = Number(prompt("Ingrese el porcentaje de descuento (ej. 20):"));
+
+// Paso 3: Calcular cuánto es el descuento en dinero.
+// Para calcular un porcentaje (ej. 20%), siempre se divide por 100 y luego se multiplica por el precio.
+let montoDescuento = precioOriginal * (porcentajeDescuento / 100);
+
+// Calcular el precio final (Precio Original - Monto de Descuento).
+let precioFinal = precioOriginal - montoDescuento;
+
+//Mostrar el resultado, usando toFixed(2) para que se vea como dinero.
+console.log("El precio final a pagar es: $" + precioFinal.toFixed(2));
