@@ -69,3 +69,11 @@
 // let promedio = (nota1 + nota2 + nota3) / 3;
 
 // console.log("Elpromedio fanal es " + promedio);
+
+Ejercicio 8
+//  Pido elnumero de horas
+let numHoras = Number(prompt("Ingrese el numero de horas trabajadas"))
+//calculo el slaario semanal
+let valHora = Number(prompt("Ingrese elvalor dela hora"))
+let Salsemanal = (numHoras * valHora)
+console.log("Tu salario semanal es $" + Salsemanal + " pesos");
