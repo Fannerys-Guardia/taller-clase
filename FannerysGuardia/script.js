@@ -197,15 +197,34 @@
 // //Mostrar el resultado.
 // console.log(cantidadUSD + " USD equivalen a " + cantidadCOP + " COP (Pesos Colombianos).");
 
-// Ejercicio 17
-// Pedir el peso en libras.
-let pesoLibras = Number(prompt("Ingrese el peso del paquete en libras (lb):"));
+// // Ejercicio 17
+// // Pedir el peso en libras.
+// let pesoLibras = Number(prompt("Ingrese el peso del paquete en libras (lb):"));
 
-//Definir el factor de conversión.
-let factorKg = 0.453592;
+// //Definir el factor de conversión.
+// let factorKg = 0.453592;
 
-//Calcular el peso en kilogramos (Libras * Factor).
-let pesoKilogramos = pesoLibras * factorKg;
+// //Calcular el peso en kilogramos (Libras * Factor).
+// let pesoKilogramos = pesoLibras * factorKg;
 
-// Mostrar el resultado, usando toFixed(3) para tres decimales.
-console.log(pesoLibras + " libras equivalen a " + pesoKilogramos.toFixed(3) + " kilogramos (kg).");
+// // Mostrar el resultado, usando toFixed(3) para tres decimales.
+// console.log(pesoLibras + " libras equivalen a " + pesoKilogramos.toFixed(3) + " kilogramos (kg).");
+
+
+// //Ejercicio 18
+// //Pedir el número de dos cifras.
+// let numeroDosCifras = Number(prompt("Ingrese un número de dos cifras (ej. 47):"));
+
+// // Obtener la primera cifra (Decena). 
+// // 47 / 10 = 4.7 -> Math.floor lo deja en 4.
+// let cifraDecena = Math.floor(numeroDosCifras / 10);
+
+// //Obtener la segunda cifra (Unidad).
+// // 47 % 10 = 7 (el residuo).
+// let cifraUnidad = numeroDosCifras % 10;
+
+// //Calcular la suma.
+// let sumaDigitos = cifraDecena + cifraUnidad;
+
+// //Mostrar el resultado.
+// console.log("La suma de los dígitos es: " + sumaDigitos);
