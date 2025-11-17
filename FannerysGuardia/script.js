@@ -166,20 +166,33 @@
 // //Imprimo el area
 // console.log("El area del triangulo es: " + areaTriangulo.toFixed(2));
 
-// Ejercicio 15
-//Pedir el nombre y el apellido.
-let nombre = prompt("Ingrese el nombre:");
-let apellido = prompt("Ingrese el apellido:");
+// // Ejercicio 15
+// //Pedir el nombre y el apellido.
+// let nombre = prompt("Ingrese el nombre:");
+// let apellido = prompt("Ingrese el apellido:");
 
 
-// Usar una variable temporal (temp) para guardar el nombre original.
-let temp = nombre; 
+// // Usar una variable temporal (temp) para guardar el nombre original.
+// let temp = nombre;
 
-// Poner el valor de 'apellido' en 'nombre'.
-nombre = apellido; 
+// // Poner el valor de 'apellido' en 'nombre'.
+// nombre = apellido;
 
-//Poner el valor original del nombre (que está en 'temp') en 'apellido'.
-apellido = temp; 
+// //Poner el valor original del nombre (que está en 'temp') en 'apellido'.
+// apellido = temp;
 
-//Mostrar los datos intercambiados.
-console.log("Datos Intercambiados: Nombre: " + nombre + ", Apellido: " + apellido);
+// //Mostrar los datos intercambiados.
+// console.log("Datos Intercambiados: Nombre: " + nombre + ", Apellido: " + apellido);
+
+// Ejercicio 16
+// Pedir la cantidad en dólares (USD).
+let cantidadUSD = Number(prompt("Ingrese la cantidad en dólares (USD) a convertir:"));
+
+//Definir la tasa de cambio fija.
+let tasaCambio = 3900; // Asumimos 1 USD = 3900 COP
+
+//Calcular el equivalente en pesos (USD * Tasa de Cambio).
+let cantidadCOP = cantidadUSD * tasaCambio;
+
+//Mostrar el resultado.
+console.log(cantidadUSD + " USD equivalen a " + cantidadCOP + " COP (Pesos Colombianos).");
