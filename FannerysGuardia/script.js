@@ -100,19 +100,36 @@
 // // Mostrar el resultado.
 // console.log(totalMinutos + " minutos son: " + horas + " horas y " + minutosRestantes + " minutos.");
 
-//Ejercicio 10
-// Pedir el precio original.
-let precioOriginal = Number(prompt("Ingrese el precio original del producto:"));
+// //Ejercicio 11
+// // Pedir el precio original.
+// let precioOriginal = Number(prompt("Ingrese el precio original del producto:"));
 
-//Pedir el porcentaje de descuento (ej. 20).
-let porcentajeDescuento = Number(prompt("Ingrese el porcentaje de descuento (ej. 20):"));
+// //Pedir el porcentaje de descuento (ej. 20).
+// let porcentajeDescuento = Number(prompt("Ingrese el porcentaje de descuento (ej. 20):"));
 
-// Paso 3: Calcular cuánto es el descuento en dinero.
-// Para calcular un porcentaje (ej. 20%), siempre se divide por 100 y luego se multiplica por el precio.
-let montoDescuento = precioOriginal * (porcentajeDescuento / 100);
+// // Paso 3: Calcular cuánto es el descuento en dinero.
+// // Para calcular un porcentaje (ej. 20%), siempre se divide por 100 y luego se multiplica por el precio.
+// let montoDescuento = precioOriginal * (porcentajeDescuento / 100);
 
-// Calcular el precio final (Precio Original - Monto de Descuento).
-let precioFinal = precioOriginal - montoDescuento;
+// // Calcular el precio final (Precio Original - Monto de Descuento).
+// let precioFinal = precioOriginal - montoDescuento;
 
-//Mostrar el resultado, usando toFixed(2) para que se vea como dinero.
-console.log("El precio final a pagar es: $" + precioFinal.toFixed(2));
+// //Mostrar el resultado, usando toFixed(2) para que se vea como dinero.
+// console.log("El precio final a pagar es: $" + precioFinal.toFixed(2));
+
+//Ejercicio 12
+// Pedir el precio base (sin IVA)
+let precioBase = Number(prompt("Ingrese el precio base del producto (sin IVA):"));
+
+//Definir el IVA como un decimal. 19% se escribe como 0.19.
+let tasaIVA = 0.19;
+
+//Calcular el monto del IVA (Precio Base * Tasa IVA).
+let montoIVA = precioBase * tasaIVA;
+
+//Calcular el precio total (Precio Base + Monto IVA).
+let precioTotal = precioBase + montoIVA;
+
+// Mostrar ambos resultados.
+console.log("El monto del IVA (19%) es: $" + montoIVA.toFixed(2));
+console.log("El precio total (con IVA) es: $" + precioTotal.toFixed(2));
