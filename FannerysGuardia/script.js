@@ -41,11 +41,22 @@
 // EJERCICIO 5
 
 //Pido el añode nacimiento
-let añoNacimiento = Number(prompt("Diga su año denacimiento"));
-let añoActual = 2024
+// let añoNacimiento = Number(prompt("Diga su año denacimiento"));
+// let añoActual = 2024
 
-//Calculo la edad
-let edad = (añoActual - añoNacimiento);
+// //Calculo la edad
+// let edad = (añoActual - añoNacimiento);
 
-console.log("Tienes " + edad + "años");
+// console.log("Tienes " + edad + " años");
+
+//Ejercicio 6
+
+//Saludar
+// let saludo = prompt("Estimado cliente, como estás eldía de hoy")
+
+//  Pedir elnombre y apellido
+// let nombre = prompt("Por favor dime tu nombre y apellido");
+
+// Mostrar
+// console.log("Bienvenido, " + nombre);
 
