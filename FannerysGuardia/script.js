@@ -156,13 +156,30 @@
 // console.log("El interés ganado es: $" + interesSimple.toFixed(2));
 // console.log("El capital final será: $" + capitalFinal.toFixed(2));
 
-// Ejercicio 14
-//Pido la base del triangulo
-let baseTriangulo = Number(prompt("Ingrese la base deltriangulo:"));
-//Pido laalturadel triangulo
-let alturaTriangulo = Number(prompt("Ingrese la altura del triangulo:"));
-//Calculo el area
-let areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
-//Imprimo el area
-console.log("El area del triangulo es: " + areaTriangulo.toFixed(2));
+// // Ejercicio 14
+// //Pido la base del triangulo
+// let baseTriangulo = Number(prompt("Ingrese la base deltriangulo:"));
+// //Pido laalturadel triangulo
+// let alturaTriangulo = Number(prompt("Ingrese la altura del triangulo:"));
+// //Calculo el area
+// let areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
+// //Imprimo el area
+// console.log("El area del triangulo es: " + areaTriangulo.toFixed(2));
 
+// Ejercicio 15
+//Pedir el nombre y el apellido.
+let nombre = prompt("Ingrese el nombre:");
+let apellido = prompt("Ingrese el apellido:");
+
+
+// Usar una variable temporal (temp) para guardar el nombre original.
+let temp = nombre; 
+
+// Poner el valor de 'apellido' en 'nombre'.
+nombre = apellido; 
+
+//Poner el valor original del nombre (que está en 'temp') en 'apellido'.
+apellido = temp; 
+
+//Mostrar los datos intercambiados.
+console.log("Datos Intercambiados: Nombre: " + nombre + ", Apellido: " + apellido);
