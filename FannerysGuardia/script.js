@@ -70,10 +70,20 @@
 
 // console.log("Elpromedio fanal es " + promedio);
 
-Ejercicio 8
-//  Pido elnumero de horas
-let numHoras = Number(prompt("Ingrese el numero de horas trabajadas"))
-//calculo el slaario semanal
-let valHora = Number(prompt("Ingrese elvalor dela hora"))
-let Salsemanal = (numHoras * valHora)
-console.log("Tu salario semanal es $" + Salsemanal + " pesos");
+// Ejercicio 8
+////  Pido elnumero de horas
+// let numHoras = Number(prompt("Ingrese el numero de horas trabajadas"))
+////calculo el slaario semanal
+// let valHora = Number(prompt("Ingrese elvalor dela hora"))
+// let Salsemanal = (numHoras * valHora)
+// console.log("Tu salario semanal es $" + Salsemanal + " pesos");
+
+// Ejercicio 9
+//Pido la distancia en millas
+let distanciaMillas = Number(prompt("Ingrese la distancia en millas"));
+//pongo a cuanto equivale
+let factorKm = 1.60934;
+//Calculo la distancia en Kilometros
+let distanciaKm = distanciaMillas * factorKm;
+console.log(distanciaMillas + "millas equivalen a " + distanciaKm.toFixed(2) + " kilometros.");
+
