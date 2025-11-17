@@ -60,3 +60,12 @@
 // Mostrar
 // console.log("Bienvenido, " + nombre);
 
+//Ejercicio 7
+//Pido las 3 notas
+// let nota1 = parseFloat(prompt("Ingrese nota 1 (0 a 5):"));
+// let nota2 = parseFloat(prompt("Ingrese nota 2 (0 a 5):"));
+// let nota3 = parseFloat(prompt("Ingrese nota 3 (0 a 5):"));
+
+// let promedio = (nota1 + nota2 + nota3) / 3;
+
+// console.log("Elpromedio fanal es " + promedio);
