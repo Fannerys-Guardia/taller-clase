@@ -78,12 +78,24 @@
 // let Salsemanal = (numHoras * valHora)
 // console.log("Tu salario semanal es $" + Salsemanal + " pesos");
 
-// Ejercicio 9
-//Pido la distancia en millas
-let distanciaMillas = Number(prompt("Ingrese la distancia en millas"));
-//pongo a cuanto equivale
-let factorKm = 1.60934;
-//Calculo la distancia en Kilometros
-let distanciaKm = distanciaMillas * factorKm;
-console.log(distanciaMillas + "millas equivalen a " + distanciaKm.toFixed(2) + " kilometros.");
+// // Ejercicio 9
+// //Pido la distancia en millas
+// let distanciaMillas = Number(prompt("Ingrese la distancia en millas"));
+// //pongo a cuanto equivale
+// let factorKm = 1.60934;
+// //Calculo la distancia en Kilometros
+// let distanciaKm = distanciaMillas * factorKm;
+// console.log(distanciaMillas + " millas equivalen a " + distanciaKm.toFixed(2) + " kilometros.");
 
+// Ejercicio 10
+// Pedir el total de minutos.
+let totalMinutos = Number(prompt("Ingrese un total de minutos:"));
+
+// Calcular las horas enteras. Dividimos por 60 (minutos en una hora) y quitamos los decimales con Math.floor.
+let horas = Math.floor(totalMinutos / 60);
+
+// Calcular los minutos restantes. Usamos el operador % para saber lo que "sobró" de la división.
+let minutosRestantes = totalMinutos % 60;
+
+// Mostrar el resultado.
+console.log(totalMinutos + " minutos son: " + horas + " horas y " + minutosRestantes + " minutos.");
