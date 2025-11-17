@@ -184,15 +184,28 @@
 // //Mostrar los datos intercambiados.
 // console.log("Datos Intercambiados: Nombre: " + nombre + ", Apellido: " + apellido);
 
-// Ejercicio 16
-// Pedir la cantidad en dólares (USD).
-let cantidadUSD = Number(prompt("Ingrese la cantidad en dólares (USD) a convertir:"));
+// // Ejercicio 16
+// // Pedir la cantidad en dólares (USD).
+// let cantidadUSD = Number(prompt("Ingrese la cantidad en dólares (USD) a convertir:"));
 
-//Definir la tasa de cambio fija.
-let tasaCambio = 3900; // Asumimos 1 USD = 3900 COP
+// //Definir la tasa de cambio fija.
+// let tasaCambio = 3900; // Asumimos 1 USD = 3900 COP
 
-//Calcular el equivalente en pesos (USD * Tasa de Cambio).
-let cantidadCOP = cantidadUSD * tasaCambio;
+// //Calcular el equivalente en pesos (USD * Tasa de Cambio).
+// let cantidadCOP = cantidadUSD * tasaCambio;
 
-//Mostrar el resultado.
-console.log(cantidadUSD + " USD equivalen a " + cantidadCOP + " COP (Pesos Colombianos).");
+// //Mostrar el resultado.
+// console.log(cantidadUSD + " USD equivalen a " + cantidadCOP + " COP (Pesos Colombianos).");
+
+// Ejercicio 17
+// Pedir el peso en libras.
+let pesoLibras = Number(prompt("Ingrese el peso del paquete en libras (lb):"));
+
+//Definir el factor de conversión.
+let factorKg = 0.453592;
+
+//Calcular el peso en kilogramos (Libras * Factor).
+let pesoKilogramos = pesoLibras * factorKg;
+
+// Mostrar el resultado, usando toFixed(3) para tres decimales.
+console.log(pesoLibras + " libras equivalen a " + pesoKilogramos.toFixed(3) + " kilogramos (kg).");
