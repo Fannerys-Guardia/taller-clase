@@ -215,7 +215,7 @@
 // //Pedir el número de dos cifras.
 // let numeroDosCifras = Number(prompt("Ingrese un número de dos cifras (ej. 47):"));
 
-// // Obtener la primera cifra (Decena). 
+// // Obtener la primera cifra (Decena).
 // // 47 / 10 = 4.7 -> Math.floor lo deja en 4.
 // let cifraDecena = Math.floor(numeroDosCifras / 10);
 
@@ -228,3 +228,16 @@
 
 // //Mostrar el resultado.
 // console.log("La suma de los dígitos es: " + sumaDigitos);
+
+//Ejercicio 19
+//Pedir el número de asistentes.
+let numeroAsistentes = Number(prompt("Ingrese el número de asistentes al evento:"));
+
+//Definir el consumo fijo por persona.
+let refrescosPorPersona = 3;
+
+//Calcular el total de refrescos (multiplicación simple).
+let totalRefrescos = numeroAsistentes * refrescosPorPersona;
+
+//Mostrar el resultado.
+console.log("Se necesitan un total de " + totalRefrescos + " refrescos.");
